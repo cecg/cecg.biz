@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <!--<base href="http://cecg.biz<?php echo @$_SERVER['REQUEST_URI']; ?>"/>-->
+    <!--<base href="https://cecg.biz<?php echo @$_SERVER['REQUEST_URI']; ?>"/>-->
     <title><?php echo @$title; ?> &#183; Crypto Economics Consulting Group</title>
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
     <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
@@ -184,28 +184,28 @@
     }
     /*]]>*/
     </style>
-    <script type="text/javascript" src="http://cecg.biz/templates/cleanout/js/s5_flex_menu.js"></script>
-    <link rel="stylesheet" href="http://cecg.biz/templates/cleanout/css/s5_flex_menu.css" type="text/css"/>
-    <link rel="stylesheet" href="http://cecg.biz/templates/system/css/system.css" type="text/css"/>
-    <link rel="stylesheet" href="http://cecg.biz/templates/system/css/general.css" type="text/css"/>
-    <link href="http://cecg.biz/templates/cleanout/css/template_default.css" rel="stylesheet" type="text/css"/>
-    <link href="http://cecg.biz/templates/cleanout/css/template.css" rel="stylesheet" type="text/css"/>
-    <link href="http://cecg.biz/templates/cleanout/css/com_content.css" rel="stylesheet" type="text/css"/>
-    <link href="http://cecg.biz/templates/cleanout/css/editor.css" rel="stylesheet" type="text/css"/>
-    <link href="http://cecg.biz/templates/cleanout/css/thirdparty.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://cecg.biz/templates/cleanout/js/s5_flex_menu.js"></script>
+    <link rel="stylesheet" href="https://cecg.biz/templates/cleanout/css/s5_flex_menu.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cecg.biz/templates/system/css/system.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cecg.biz/templates/system/css/general.css" type="text/css"/>
+    <link href="https://cecg.biz/templates/cleanout/css/template_default.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cecg.biz/templates/cleanout/css/template.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cecg.biz/templates/cleanout/css/com_content.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cecg.biz/templates/cleanout/css/editor.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cecg.biz/templates/cleanout/css/thirdparty.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:Light+200"/>
-    <link href="http://cecg.biz/templates/cleanout/css/multibox/multibox.css" rel="stylesheet" type="text/css"/>
-    <link href="http://cecg.biz/templates/cleanout/css/multibox/ajax.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="http://cecg.biz/templates/cleanout/js/multibox/overlay.js"></script>
-    <script type="text/javascript" src="http://cecg.biz/templates/cleanout/js/multibox/multibox.js"></script>
-    <link href="http://cecg.biz/templates/cleanout/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="http://cecg.biz/templates/cleanout/css/s5_responsive_bars.css"/>
-    <link href="http://cecg.biz/templates/cleanout/css/s5_responsive_hide_classes.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" type="text/css" href="http://cecg.biz/templates/cleanout/css/s5_responsive.css"/>
-    <link rel="stylesheet" type="text/css" href="http://cecg.biz/templates/cleanout/css/custom.css"/>
+    <link href="https://cecg.biz/templates/cleanout/css/multibox/multibox.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cecg.biz/templates/cleanout/css/multibox/ajax.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://cecg.biz/templates/cleanout/js/multibox/overlay.js"></script>
+    <script type="text/javascript" src="https://cecg.biz/templates/cleanout/js/multibox/multibox.js"></script>
+    <link href="https://cecg.biz/templates/cleanout/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="https://cecg.biz/templates/cleanout/css/s5_responsive_bars.css"/>
+    <link href="https://cecg.biz/templates/cleanout/css/s5_responsive_hide_classes.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="https://cecg.biz/templates/cleanout/css/s5_responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cecg.biz/templates/cleanout/css/custom.css"/>
     <!-- Info Slide Script - Called in header so css validates -->
-    <link href="http://cecg.biz/templates/cleanout/css/s5_info_slide.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="http://cecg.biz/templates/cleanout/js/s5_info_slide.js"></script>
+    <link href="https://cecg.biz/templates/cleanout/css/s5_info_slide.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://cecg.biz/templates/cleanout/js/s5_info_slide.js"></script>
     <!-- File compression. Needs to be called last on this file -->
     <!-- The excluded files, listed below the compressed php files, are excluded because their calls vary per device or per browser. Included compression files are only ones that have no conditions and are included on all devices and browsers. Otherwise unwanted css will compile in the compressed files. -->
     <style type="text/css">
@@ -242,15 +242,15 @@
 
     .bigbutton {
     background-color: #ed1c23;
-    background-image: url(http://cecg.biz/templates/cleanout/images/handarrow.png), -moz-linear-gradient(top, #ed1c23 7%, #b10000 100%); /* FF3.6+ */
-    background-image: url(http://cecg.biz/templates/cleanout/images/handarrow.png), -webkit-gradient(linear, left top, left bottom, color-stop(7%,#ed1c23), color-stop(100%,#b10000)); /* Chrome,Safari4+ */
-    background-image: url(http://cecg.biz/templates/cleanout/images/handarrow.png), -webkit-linear-gradient(top, #ed1c23 7%,#b10000 100%); /* Chrome10+,Safari5.1+ */
-    background-image: url(http://cecg.biz/templates/cleanout/images/handarrow.png),-o-linear-gradient(top, #ed1c23 7%,#b10000 100%); /* Opera 11.10+ */
-    background-image: url(http://cecg.biz/templates/cleanout/images/handarrow.png), -ms-linear-gradient(top, #ed1c23 7%,#b10000 100%); /* IE10+ */
-    background-image: url(http://cecg.biz/templates/cleanout/images/handarrow.png), linear-gradient(to bottom, #ed1c23 7%,#b10000 100%); /* W3C */
+    background-image: url(https://cecg.biz/templates/cleanout/images/handarrow.png), -moz-linear-gradient(top, #ed1c23 7%, #b10000 100%); /* FF3.6+ */
+    background-image: url(https://cecg.biz/templates/cleanout/images/handarrow.png), -webkit-gradient(linear, left top, left bottom, color-stop(7%,#ed1c23), color-stop(100%,#b10000)); /* Chrome,Safari4+ */
+    background-image: url(https://cecg.biz/templates/cleanout/images/handarrow.png), -webkit-linear-gradient(top, #ed1c23 7%,#b10000 100%); /* Chrome10+,Safari5.1+ */
+    background-image: url(https://cecg.biz/templates/cleanout/images/handarrow.png),-o-linear-gradient(top, #ed1c23 7%,#b10000 100%); /* Opera 11.10+ */
+    background-image: url(https://cecg.biz/templates/cleanout/images/handarrow.png), -ms-linear-gradient(top, #ed1c23 7%,#b10000 100%); /* IE10+ */
+    background-image: url(https://cecg.biz/templates/cleanout/images/handarrow.png), linear-gradient(to bottom, #ed1c23 7%,#b10000 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1c23', endColorstr='#b10000',GradientType=0 ); /* IE6-9 */  }
 
-    .bigbutton:hover {  background: #ed1c23 url(http://cecg.biz/templates/cleanout/images/handarrow.png) no-repeat right 11px !important;}
+    .bigbutton:hover {  background: #ed1c23 url(https://cecg.biz/templates/cleanout/images/handarrow.png) no-repeat right 11px !important;}
 
     #s5_socialicons {position:fixed;}
     #subMenusContainer, #s5_drop_down_container {position:fixed !important;}
@@ -301,7 +301,7 @@
         </div>
         <div id="s5_responsive_mobile_drop_down_search">
           <div class="s5_responsive_mobile_drop_down_inner" style="-webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);-moz-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);">
-            <form method="post" action="http://cecg.biz/">
+            <form method="post" action="https://cecg.biz/">
               <input type="text" onfocus="if (this.value=='Search...') this.value='';" onblur="if (this.value=='') this.value='Search...';" value="Search..." id="s5_responsive_mobile_search" name="searchword"/> <input type="hidden" value="search" name="task"/> <input type="hidden" value="com_search" name="option"/> <input type="hidden" value="1" name="Itemid"/>
             </form>
           </div>
@@ -318,7 +318,7 @@
     var s5_responsive_login_url = "";
     var s5_responsive_register_url = "";
     //]]>
-    </script><script type="text/javascript" language="javascript" src="http://cecg.biz/templates/cleanout/js/s5_responsive_mobile_bar.js">
+    </script><script type="text/javascript" language="javascript" src="https://cecg.biz/templates/cleanout/js/s5_responsive_mobile_bar.js">
 </script><!-- Fixed Tabs --><!-- Drop Down --><!-- Body Padding Div Used For Responsive Spacing -->
     <div id="s5_body_padding">
       <!-- Header -->
@@ -326,11 +326,11 @@
       <div id="s5_header_area2"></div>
       <div id="s5_header_wrap">
         <div id="s5_header_area_inner" class="s5_wrap">
-          <img alt="logo" src="http://cecg.biz/templates/cleanout/images/s5_logo.png" id="s5_logo" onclick="window.document.location.href='http://cecg.biz/'"/>
+          <img alt="logo" src="https://cecg.biz/templates/cleanout/images/s5_logo.png" id="s5_logo" onclick="window.document.location.href='https://cecg.biz/'"/>
           <div id="s5_menu_wrap">
             <ul id='s5_nav' class='menu'>
               <li<?= ($path == '/') ? ' class="active"' : '' ?>>
-                <span class='s5_level1_span1'><span class='s5_level1_span2'><a href="http://cecg.biz/">Home</a></span></span>
+                <span class='s5_level1_span1'><span class='s5_level1_span2'><a href="https://cecg.biz/">Home</a></span></span>
               </li>
               <li<?= ($path == '/bitcoin') ? ' class="active"' : '' ?>>
                 <span class='s5_level1_span1'><span class='s5_level1_span2'><a href="/bitcoin">Bitcoin?</a></span></span>
@@ -415,13 +415,13 @@
       window.s5mbox = new multiBox({
       mbClass: '.s5mb',//class you need to add links that you want to trigger multiBox with (remember and update CSS files)
       container: $(document.body),//where to inject multiBox
-      path: 'http://cecg.biz/templates/cleanout/js/multibox/',//path to mp3player and flvplayer etc
+      path: 'https://cecg.biz/templates/cleanout/js/multibox/',//path to mp3player and flvplayer etc
       useOverlay: true,//detect overlay setting
       maxSize: {w:600, h:400},//max dimensions (width,height) - set to null to disable resizing
       movieSize: {w:550, h:400},
       addDownload: false,//do you want the files to be downloadable?
       descClassName: 's5_multibox',//the class name of the description divs
-      pathToDownloadScript: 'http://cecg.biz/templates/cleanout/js/multibox/forceDownload.asp',//if above is true, specify path to download script (classicASP and ASP.NET versions included)
+      pathToDownloadScript: 'https://cecg.biz/templates/cleanout/js/multibox/forceDownload.asp',//if above is true, specify path to download script (classicASP and ASP.NET versions included)
       addRollover: false,//add rollover fade to each multibox link
       addOverlayIcon: false,//adds overlay icons to images within multibox links
       addChain: false,//cycle through all images fading them out then in
@@ -440,14 +440,14 @@
 //<![CDATA[
       var s5_lazyload = "all";
       //]]>
-      </script> <script type="text/javascript" language="javascript" src="http://cecg.biz/templates/cleanout/js/lazy_load.js">
+      </script> <script type="text/javascript" language="javascript" src="https://cecg.biz/templates/cleanout/js/lazy_load.js">
 </script> <script type="text/javascript">
 //<![CDATA[
       var s5_resize_columns = "main";
       var s5_resize_columns_delay = "500";
       var s5_resize_columns_small_tablets = "default";
       //]]>
-      </script> <script type="text/javascript" language="javascript" src="http://cecg.biz/templates/cleanout/js/s5_columns_equalizer.js">
+      </script> <script type="text/javascript" language="javascript" src="https://cecg.biz/templates/cleanout/js/s5_columns_equalizer.js">
 </script> <!-- Additional scripts to load just before closing body tag -->
        <!-- Info Slide script - JS and CSS called in header -->
        <script type='text/javascript'>
