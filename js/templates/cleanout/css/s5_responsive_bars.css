@@ -1,0 +1,502 @@
+/* THIS CSS IS PRIMARILY CALLED FOR MOBILE DEVICES BUT IT ALSO IS NEEDED IF THE USER HAS CLICKED TO SEE THE DESKTOP VERSION FROM A MOBILE DEVICE
+----------------------------------------------------------- */
+
+	
+/* MOBILE ONLY CALLS
+----------------------------------------------------------- */
+
+@media screen and (max-width: 750px){
+
+	.s5_scrolltotop {
+	display:none;
+	}
+	
+	#s5_drop_down_container {
+	display:none !important;
+	}
+	
+	#s5_loginreg {
+	display:none !important;
+	}
+	
+	#s5_menu_wrap {
+	display:none;
+	}
+	
+	#s5_responsive_mobile_bottom_bar .s5_scrolltotop {
+	display:block;
+	background:none;
+	padding:0px;
+	margin:0px;
+	width:auto;
+	height:auto;
+	}
+	
+	#s5_responsive_mobile_bottom_bar_outer, #s5_responsive_mobile_top_bar {
+	display:block !important;
+	}
+	
+	#s5_responsive_mobile_top_bar {
+	position:relative;
+	z-index:2;
+	}
+	
+	.s5_responsive_modile_drop_down_wrap_loading {
+	position:absolute;
+	z-index:100;
+	top:-500000px;
+	}
+	
+	.s5_regfloatleft, #member-registration div {
+	width:100% !important;
+	}
+	
+	#s5_responsive_mobile_bottom_bar_outer {
+	width:100% !important;
+	}
+	
+	#s5_responsive_mobile_top_bar_spacer, #s5_responsive_mobile_top_bar, #s5_responsive_mobile_bottom_bar {
+	display:block;
+	margin:0px !important;
+	height:48px;
+	overflow:hidden;
+	}
+	
+	#s5_responsive_mobile_top_bar_spacer {
+	padding-left:0px !important;
+	padding-right:0px !important;
+	}
+	
+	#s5_responsive_mobile_top_bar_wrap {
+	margin-top:0px !important;
+	width:100%;
+	}
+	
+	#s5_responsive_mobile_top_bar_wrap ul {
+	margin:0px;
+	list-style:none;
+	}
+	
+	#s5_responsive_mobile_drop_down_menu .s5_responsive_mobile_drop_down_inner {
+	padding:10px;
+	}
+	
+	#s5_responsive_mobile_drop_down_search .s5_responsive_mobile_drop_down_inner {
+	padding:12px;
+	}
+	
+	#s5_responsive_mobile_drop_down_register .s5_responsive_mobile_drop_down_inner {
+	padding:16px;
+	}
+	
+	#s5_responsive_mobile_drop_down_login .s5_responsive_mobile_drop_down_inner {
+	padding:16px;
+	}
+	
+	#s5_responsive_mobile_bar_active {
+	padding-top:15px;
+	float:left;
+	margin-left:15px;
+	font-size:8pt;
+	overflow:hidden;
+	height:22px;
+	}
+	
+	#s5_responsive_mobile_bar_active span {
+	width:800px;
+	display:block;
+	}
+	
+	#s5_responsive_mobile_scroll {
+	float:right;
+	display:block;
+	}
+	
+	.s5_responsive_mobile_drop_down_inner img {
+	display:none;
+	}
+	
+	#s5_responsive_mobile_drop_down_menu, #s5_responsive_mobile_drop_down_menu a {
+	font-size:10pt;
+	}
+	
+	#s5_responsive_mobile_drop_down_menu ul li {
+	padding-bottom:3px;
+	padding-top:0px;
+	padding-left:6px;
+	padding-right:6px;
+	margin-bottom:1px;
+	list-style:none;
+	}
+	
+	#s5_responsive_mobile_drop_down_menu ul li.deeper {
+	padding-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	}
+	
+	#s5_responsive_mobile_drop_down_menu ul li.deeper ul {
+	padding-top:3px;
+	margin-bottom:3px;
+	margin-left:0px;
+	margin-right:0px;
+	}
+	
+	#s5_responsive_mobile_drop_down_menu ul li.deeper ul li, #s5_responsive_mobile_drop_down_menu ul li.deeper ul li a {
+	font-size:7pt;
+	padding-left:6px;
+	}
+	
+	#s5_responsive_mobile_drop_down_menu {
+	width:60%;
+	float:left;
+	padding-bottom:16px;
+	padding-right:16px;
+	}
+	
+	#s5_responsive_mobile_drop_down_search {
+	width:60%;
+	float:right;
+	padding-bottom:16px;
+	padding-left:16px;
+	}
+	
+	#s5_responsive_mobile_drop_down_register {
+	width:68%;
+	float:right;
+	padding-bottom:16px;
+	padding-left:16px;
+	}
+	
+	#s5_responsive_mobile_drop_down_login {
+	width:62%;
+	float:right;
+	padding-bottom:16px;
+	padding-left:16px;
+	}
+	
+	#form-login-password {
+	padding-top:6px !important;
+	padding-bottom:6px !important;
+	}
+	
+	#s5_responsive_modile_drop_down_wrap input {
+	border:none;
+	margin:0px !important;
+	margin-bottom: 0px !important;
+	padding: 5px 10px 5px 10px !important;
+	font-size: 9pt;
+	background:#F1F1F1;
+	-moz-box-shadow:0 4px 4px rgba(0, 0, 0, 0.3) inset;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 4px 4px rgba(0, 0, 0, 0.3) inset;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	color:#131313;
+	-webkit-transition: all 400ms ease-out;
+	-moz-transition: all 400ms ease-out;
+	-o-transition: all 400ms ease-out;
+	transition: all 400ms ease-out;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	}
+	
+	#s5_responsive_modile_drop_down_wrap input:hover {
+	-moz-box-shadow:0 4px 4px rgba(0, 0, 0, 0.6) inset;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.6) inset;
+    box-shadow:0 4px 4px rgba(0, 0, 0, 0.6) inset;
+	background:#E1E1E1;
+	}
+	
+	#s5_responsive_mobile_drop_down_login #modlgn-remember, #s5_responsive_mobile_drop_down_login .button {
+	width:auto !important;
+	-moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+	}
+	
+	#s5_responsive_mobile_drop_down_login #modlgn-remember:hover, #s5_responsive_mobile_drop_down_login .button:hover {
+	-moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+	}
+	
+	#s5_responsive_modile_drop_down_wrap button, #s5_responsive_modile_drop_down_wrap .button, .validate {
+	color:#FFFFFF !important;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	padding:8px !important;
+	margin:0px !important;
+	font-weight:normal !important;
+	border:none !important;
+	-webkit-transition: all 400ms ease-out;
+	-moz-transition: all 400ms ease-out;
+	-o-transition: all 400ms ease-out;
+	transition: all 400ms ease-out;
+	}
+	
+	.s5_responsive_mobile_drop_down_inner .s5_mod_h3 {
+	font-size:11pt;
+	margin-bottom:10px;
+	margin-top:4px;
+	}
+	
+	.s5_responsive_mobile_drop_down_inner label {
+	font-size:10pt !important;
+	}
+	
+	#s5_responsive_mobile_drop_down_login_inner label {
+	margin-bottom:6px;
+	display:block;
+	}
+	
+	#s5_responsive_mobile_drop_down_login_inner #form-login-remember label {
+	display:inline;
+	}
+	
+	#s5_responsive_mobile_drop_down_login_inner .userdata {
+	padding-bottom:12px;
+	}
+	
+	#s5_responsive_mobile_drop_down_login_inner #form-login-remember {
+	padding-bottom:6px;
+	}
+	
+	#s5_responsive_mobile_drop_down_login_inner .login-greeting {
+	padding-bottom:12px;
+	}
+
+}
+
+
+
+/* VERY SMALL CSS
+----------------------------------------------------------- */
+
+@media screen and (max-width: 240px){
+	
+	#s5_responsive_mobile_bar_active {
+	display:none;
+	}
+	
+}
+
+
+/* STYLIZE THE TOP AND BOTTOM BARS. MUST BE CALLED OUT OF MEDIA QUERY SO BOTTOM BAR STILL APPEARS WITH MOBILE SWITCH COOKIE.
+----------------------------------------------------------- */
+
+	#s5_responsive_mobile_bottom_bar_outer {
+	position:absolute;
+	z-index:2;
+	bottom:0px;
+	width:100%;
+	left:0px;
+	height:48px;
+	overflow:hidden;
+	}
+	
+	.s5_body_ie7 {
+	height:100% !important;
+	position:relative !important;
+	padding-bottom:48px !important;
+	}
+	
+	#s5_responsive_switch_mobile a {
+	padding-left:35px;
+	padding-top:15px;
+	margin-left:15px;
+	height:34px;
+	display:block;
+	cursor:pointer;
+	float:left;
+	font-size:10pt;
+	}
+	
+	#s5_responsive_switch_desktop a {
+	padding-left:25px;
+	padding-top:15px;
+	margin-left:15px;
+	height:34px;
+	display:block;
+	cursor:pointer;
+	float:left;
+	font-size:10pt;
+	}
+	
+	#s5_responsive_mobile_scroll {
+	width:48px;
+	height:48px;
+	overflow:hidden;
+	}
+	
+	#s5_responsive_mobile_scroll a {
+	width:48px !important;
+	height:48px !important;
+	display:block !important;
+	padding:0px !important;
+	margin:0px !important;
+	cursor:pointer;
+	}
+	
+	#s5_responsive_mobile_toggle_click_menu span {
+	width:56px;
+	height:48px;
+	display:block;
+	cursor:pointer;
+	}
+	
+	#s5_responsive_mobile_toggle_click_search span {
+	width:48px;
+	height:48px;
+	display:block;
+	cursor:pointer;
+	}
+	
+	#s5_responsive_mobile_toggle_click_login span {
+	width:48px;
+	height:48px;
+	display:block;
+	cursor:pointer;
+	}
+	
+	#s5_responsive_mobile_toggle_click_register span {
+	width:48px;
+	height:48px;
+	display:block;
+	cursor:pointer;
+	}
+	
+	.s5_responsive_mobile_bar_dark #s5_responsive_switch_mobile a {
+	background:url(../images/vertex/responsive/desktop_dark.png) no-repeat 0% 47%;
+	}
+	
+	.s5_responsive_mobile_bar_dark #s5_responsive_switch_desktop a {
+	background:url(../images/vertex/responsive/mobile_dark.png) no-repeat 0% 47%;
+	}
+	
+	.s5_responsive_mobile_bar_dark #s5_responsive_mobile_scroll a {
+	background:url(../images/vertex/responsive/scroll_dark.png) no-repeat 50% 46%;
+	}
+	
+	.s5_responsive_mobile_bar_dark #s5_responsive_mobile_toggle_click_menu span {
+	background:url(../images/vertex/responsive/menu_dark.png) no-repeat 50% 45%;
+	}
+	
+	.s5_responsive_mobile_bar_dark #s5_responsive_mobile_toggle_click_search span {
+	background:url(../images/vertex/responsive/search_dark.png) no-repeat 50% 45%;
+	}
+	
+	.s5_responsive_mobile_bar_dark #s5_responsive_mobile_toggle_click_login span {
+	background:url(../images/vertex/responsive/login_dark.png) no-repeat 50% 45%;
+	}
+	
+	.s5_responsive_mobile_bar_dark #s5_responsive_mobile_toggle_click_register span {
+	background:url(../images/vertex/responsive/register_dark.png) no-repeat 49% 45%;
+	}
+	
+	.s5_responsive_mobile_bar_light #s5_responsive_switch_mobile a {
+	background:url(../images/vertex/responsive/desktop_light.png) no-repeat 0% 47%;
+	}
+	
+	.s5_responsive_mobile_bar_light #s5_responsive_switch_desktop a {
+	background:url(../images/vertex/responsive/mobile_light.png) no-repeat 0% 47%;
+	}
+	
+	.s5_responsive_mobile_bar_light #s5_responsive_mobile_scroll a {
+	background:url(../images/vertex/responsive/scroll_light.png) no-repeat 50% 46%;
+	}
+	
+	.s5_responsive_mobile_bar_light #s5_responsive_mobile_toggle_click_menu span {
+	background:url(../images/vertex/responsive/menu_light.png) no-repeat 50% 45%;
+	}
+	
+	.s5_responsive_mobile_bar_light #s5_responsive_mobile_toggle_click_search span {
+	background:url(../images/vertex/responsive/search_light.png) no-repeat 50% 45%;
+	}
+	
+	.s5_responsive_mobile_bar_light #s5_responsive_mobile_toggle_click_login span {
+	background:url(../images/vertex/responsive/login_light.png) no-repeat 50% 45%;
+	}
+	
+	.s5_responsive_mobile_bar_light #s5_responsive_mobile_toggle_click_register span {
+	background:url(../images/vertex/responsive/register_light.png) no-repeat 49% 45%;
+	}
+	
+		
+	/* Retina Display Images */
+	@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+	
+		.s5_responsive_mobile_bar_dark #s5_responsive_switch_mobile a {
+		background:url(../images/vertex/responsive/desktop_darkx2.png) no-repeat 0% 47%;
+		background-size:24px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_dark #s5_responsive_switch_desktop a {
+		background:url(../images/vertex/responsive/mobile_darkx2.png) no-repeat 0% 47%;
+		background-size:14px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_dark #s5_responsive_mobile_scroll a {
+		background:url(../images/vertex/responsive/scroll_darkx2.png) no-repeat 50% 46%;
+		background-size:24px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_dark #s5_responsive_mobile_toggle_click_menu span {
+		background:url(../images/vertex/responsive/menu_darkx2.png) no-repeat 50% 45%;
+		background-size:28px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_dark #s5_responsive_mobile_toggle_click_search span {
+		background:url(../images/vertex/responsive/search_darkx2.png) no-repeat 50% 45%;
+		background-size:24px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_dark #s5_responsive_mobile_toggle_click_login span {
+		background:url(../images/vertex/responsive/login_darkx2.png) no-repeat 50% 45%;
+		background-size:22px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_dark #s5_responsive_mobile_toggle_click_register span {
+		background:url(../images/vertex/responsive/register_darkx2.png) no-repeat 49% 45%;
+		background-size:21px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_light #s5_responsive_switch_mobile a {
+		background:url(../images/vertex/responsive/desktop_lightx2.png) no-repeat 0% 47%;
+		background-size:24px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_light #s5_responsive_switch_desktop a {
+		background:url(../images/vertex/responsive/mobile_lightx2.png) no-repeat 0% 47%;
+		background-size:14px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_light #s5_responsive_mobile_scroll a {
+		background:url(../images/vertex/responsive/scroll_lightx2.png) no-repeat 50% 46%;
+		background-size:24px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_light #s5_responsive_mobile_toggle_click_menu span {
+		background:url(../images/vertex/responsive/menu_lightx2.png) no-repeat 50% 45%;
+		background-size:28px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_light #s5_responsive_mobile_toggle_click_search span {
+		background:url(../images/vertex/responsive/search_lightx2.png) no-repeat 50% 45%;
+		background-size:24px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_light #s5_responsive_mobile_toggle_click_login span {
+		background:url(../images/vertex/responsive/login_lightx2.png) no-repeat 50% 45%;
+		background-size:22px 22px;
+		}
+		
+		.s5_responsive_mobile_bar_light #s5_responsive_mobile_toggle_click_register span {
+		background:url(../images/vertex/responsive/register_lightx2.png) no-repeat 49% 45%;
+		background-size:21px 22px;
+		}
+		
+	}

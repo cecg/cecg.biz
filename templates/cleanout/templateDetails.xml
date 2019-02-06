@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension
+	version="1.6"
+	type="template"
+	client="site">
+	<name>cleanout</name>
+	<creationDate>January 2013</creationDate>
+	<author>Shape5.com</author>
+	<copyright>Shape5</copyright>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>http://www.shape5.com</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[
+	
+	<h1>CryptoEconomy</h1>
+
+	<br/>
+	<img src="../templates/cleanout/template_thumbnail.png" align="left" hspace="10" style="padding-right:10px;"/>
+	  
+	<br />
+	<a href="http://www.shape5.com/joomla_tutorials.html">.</a>
+	<br />
+	
+	<br /><br />
+	<div class="vertex-admin-logoback"><div class="vertex-admin-logo"></div></div>
+	<br /><br />
+	Powered by LNAmedia<br/><br/>
+	 
+	
+	
+	
+	]]></description>
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>vertex.json</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>xml</folder>
+		<folder>vertex</folder>	
+		<folder>cache</folder>	
+	</files>
+	<languages folder="xml/language">
+		<language tag="en-GB">en-GB/en-GB.tpl_cleanout.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_vertex.ini</language>
+	</languages>
+	<positions>
+		<position>bottom_menu</position>
+		<position>logo</position>
+		<position>login</position>
+		<position>register</position>
+		<position>search</position>
+		<position>breadcrumb</position>
+		<position>top_row1_1</position>
+		<position>top_row1_2</position>
+		<position>top_row1_3</position>
+		<position>top_row1_4</position>
+		<position>top_row1_5</position>
+		<position>top_row1_6</position>
+		<position>top_row2_1</position>
+		<position>top_row2_2</position>
+		<position>top_row2_3</position>
+		<position>top_row2_4</position>
+		<position>top_row2_5</position>
+		<position>top_row2_6</position>
+		<position>top_row3_1</position>
+		<position>top_row3_2</position>
+		<position>top_row3_3</position>
+		<position>top_row3_4</position>
+		<position>top_row3_5</position>
+		<position>top_row3_6</position>
+		<position>above_columns_1</position>
+		<position>above_columns_2</position>
+		<position>above_columns_3</position>
+		<position>above_columns_4</position>
+		<position>above_columns_5</position>
+		<position>above_columns_6</position>		
+		<position>left_top</position>
+		<position>left</position>
+		<position>left_inset</position>
+		<position>right_top</position>
+		<position>right</position>
+		<position>right_inset</position>
+		<position>middle_top_1</position>
+		<position>middle_top_2</position>
+		<position>middle_top_3</position>
+		<position>middle_top_4</position>
+		<position>middle_top_5</position>
+		<position>middle_top_6</position>
+		<position>above_body_1</position>
+		<position>above_body_2</position>
+		<position>above_body_3</position>
+		<position>above_body_4</position>
+		<position>above_body_5</position>
+		<position>above_body_6</position>
+		<position>left_bottom</position>
+		<position>right_bottom</position>
+		<position>middle_bottom_1</position>
+		<position>middle_bottom_2</position>
+		<position>middle_bottom_3</position>
+		<position>middle_bottom_4</position>
+		<position>middle_bottom_5</position>
+		<position>middle_bottom_6</position>
+		<position>below_body_1</position>
+		<position>below_body_2</position>
+		<position>below_body_3</position>
+		<position>below_body_4</position>
+		<position>below_body_5</position>
+		<position>below_body_6</position>
+		<position>below_columns_1</position>
+		<position>below_columns_2</position>
+		<position>below_columns_3</position>
+		<position>below_columns_4</position>
+		<position>below_columns_5</position>
+		<position>below_columns_6</position>			
+		<position>bottom_row1_1</position>
+		<position>bottom_row1_2</position>
+		<position>bottom_row1_3</position>
+		<position>bottom_row1_4</position>
+		<position>bottom_row1_5</position>
+		<position>bottom_row1_6</position>
+		<position>bottom_row2_1</position>
+		<position>bottom_row2_2</position>
+		<position>bottom_row2_3</position>
+		<position>bottom_row2_4</position>
+		<position>bottom_row2_5</position>
+		<position>bottom_row2_6</position>
+		<position>bottom_row3_1</position>
+		<position>bottom_row3_2</position>
+		<position>bottom_row3_3</position>
+		<position>bottom_row3_4</position>
+		<position>bottom_row3_5</position>
+		<position>bottom_row3_6</position>
+		<position>debug</position>	
+		<position>footer</position>	
+		<position>drop_down_1</position>
+		<position>drop_down_2</position>
+		<position>drop_down_3</position>
+		<position>drop_down_4</position>
+		<position>drop_down_5</position>
+		<position>drop_down_6</position>
+		<position>s5_menu1</position>
+		<position>s5_menu2</position>
+		<position>s5_menu3</position>
+		<position>s5_menu4</position>
+		<position>s5_menu5</position>
+		<position>s5_menu6</position>
+		<position>s5_menu7</position>
+		<position>s5_menu8</position>
+		<position>s5_menu9</position>
+		<position>s5_menu10</position>
+		<position>s5_menu11</position>
+		<position>s5_menu12</position>
+		<position>s5_menu13</position>
+		<position>s5_menu14</position>
+		<position>s5_menu15</position>
+		<position>s5_menu16</position>
+		<position>s5_menu17</position>
+		<position>s5_menu18</position>
+		<position>s5_menu19</position>
+		<position>s5_menu20</position>
+		<position>s5_menu21</position>
+		<position>s5_menu22</position>
+		<position>s5_menu23</position>
+		<position>s5_menu24</position>
+		<position>s5_menu25</position>
+		<position>s5_menu26</position>
+		<position>s5_menu27</position>
+		<position>s5_menu28</position>
+		<position>s5_menu29</position>
+		<position>s5_menu30</position>
+		<position>s5_menu31</position>
+		<position>s5_menu32</position>
+		<position>s5_menu33</position>
+		<position>s5_menu34</position>
+		<position>s5_menu35</position>
+		<position>s5_menu36</position>
+		<position>s5_menu37</position>
+		<position>s5_menu38</position>
+		<position>s5_menu39</position>
+		<position>s5_menu40</position>
+		<position>s5_tab1</position>
+		<position>s5_tab2</position>
+		<position>s5_tab3</position>
+		<position>s5_tab4</position>
+		<position>s5_tab5</position>
+		<position>s5_tab6</position>
+		<position>s5_tab7</position>
+		<position>s5_tab8</position>
+		<position>s5_tab9</position>
+		<position>s5_tab10</position>
+		<position>s5_box1</position>
+		<position>s5_box2</position>
+		<position>s5_box3</position>
+		<position>s5_box4</position>
+		<position>s5_box5</position>
+		<position>s5_box6</position>
+		<position>s5_box7</position>
+		<position>s5_box8</position>
+		<position>s5_box9</position>
+		<position>s5_box10</position>
+		<position>imageslide_1</position>
+		<position>imageslide_2</position>
+		<position>imageslide_3</position>
+		<position>imageslide_4</position>
+		<position>imageslide_5</position>
+		<position>imageslide_6</position>
+		<position>imageslide_7</position>
+		<position>imageslide_8</position>
+		<position>imageslide_9</position>
+		<position>imageslide_10</position>
+	</positions>
+	<config>
+		<fields name="params" addfieldpath="/templates/cleanout/vertex/admin/elements">
+			<fieldset name="sscript" label=" ">
+				<field name="settings" type="vertex" default="" description="" label=" " />
+			</fieldset>
+		</fields>
+	</config>	
+</extension>

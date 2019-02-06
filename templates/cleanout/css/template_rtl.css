@@ -1,0 +1,256 @@
+#s5_navv li, #s5_search_wrap #mod_search_searchword, #s5_top_row1_wrap, #s5_top_row2_wrap, #s5_top_row3_wrap, #s5_center_column_wrap, #s5_left_column_wrap, #s5_right_column_wrap, #s5_bottom_row1_wrap, #s5_bottom_row2_wrap, #s5_bottom_row3_wrap, .s5_vm_name, .s5_vm_image, .s5_vm_price, .s5_vm_add_to_cart  {
+direction:rtl;
+text-align:right;
+}
+
+#s5_nav li {
+float:right;}
+
+#s5_logo {float:right;
+background-position:top right;
+}
+
+#s5_login, #s5_register {
+margin-right:8px;
+margin-left:0px;
+}
+
+#s5_menu_wrap, a.readon, .contentheading {
+float:left;
+}
+
+#s5_pos_banner {
+float:left;
+}
+
+#s5_loginreg {float: left;}
+
+#accordion_inner, #s5_pos_top_row1_1 {
+direction:ltr;
+}
+
+.jcomments-links {
+	text-align:right;
+	direction:ltr;
+	}
+
+.article_column .contentpaneopen {
+padding-right:0px;
+padding-left:15px;
+}
+
+
+#loading_img {
+visibility:hidden;
+}
+
+.latestnews li, .mostread li, .sections li, .s5_module_box ul.menu a {
+background-position:center right;
+}
+
+ul.actions li {
+    float:left;}
+
+/* Accordion Menu
+----------------------------------------------------------- */
+
+#s5_accordion_menu h3.s5_am_parent span.s5_accordion_menu_left {
+padding-right:32px;
+}
+
+div.s5_accordion_menu_element li a {
+background:url("../images/arrow.png") no-repeat scroll right center transparent;
+padding-right:20px;
+padding-left:0px;
+}
+
+
+/* Flex Menu
+----------------------------------------------------------- */
+
+#s5_nav, #subMenusContainer {
+direction:rtl;
+}
+
+
+
+.s5_sub_wrap, .s5_sub_wrap_lower {
+	padding-right:0px;
+	padding-left:6px;
+}
+
+.s5_sub_wrap_lower {
+	padding-right:6px;
+}
+
+#subMenusContainer a, #s5_nav li li a {
+	text-align:right;
+	}
+	
+.subParentBtn .S5_submenu_item a {
+background:none;
+}
+
+
+/* End Flex Menu
+----------------------------------------------------------- */
+
+
+#login li, #form-login li {
+background-position:center right;}
+
+
+#s5box_login, #s5box_register {
+    direction:rtl;}
+
+	
+	
+	
+	
+	
+
+/* Template Specific
+----------------------------------------------------------- */
+.s5_daydate { padding-right: 9px;}
+.s5_first {  padding-right: 9px;}
+.s5_datewrapper {  float: right;margin-left: 9px;}
+.contentheading { padding-top: 4px;}
+.s5_articlespacer {display:block;}
+.product_addtocart {direction:ltr;}
+.s5_addtocartdropdown { direction: rtl;}
+
+
+.s5_imagefader_position { margin-left: -615px !important;}
+
+.slideInfoZone .bigbutton {float:right !important;}
+
+#s5_socialicons { left: 25px;}
+
+.s5_regfloatleft {float:right !important;}
+
+
+/* Template Defaults
+----------------------------------------------------------- */
+#s5_breadcrumb_wrap {text-align: right;}
+	
+
+
+
+
+/* Jcomments
+----------------------------------------------------------- */
+#jc {padding-right:11px; }
+#jc h4 { text-align:right;}
+#comments-form, #comments-form p, #comments-report-form, #comments-report-form p, #comments-form span, #comments-form .counter {
+text-align:right;}
+#comments-form .btn, #comments-report-form .btn {
+float:right;margin-right:22px;}
+
+#jc .rbox div, #comments {
+text-align:right;
+}
+
+
+/* Tienda
+----------------------------------------------------------- */
+
+div#tienda_products div.product_thumb {
+float:none;
+}
+
+
+
+
+
+.btn-group > .btn:first-child,
+.radio.btn-group > label:first-of-type {
+  margin-left: 0;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-topright: 4px;
+}
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+.btn-group > .btn.large:first-child {
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-topleft: 0px;
+  margin-right: 0;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-topright: 4px;
+}
+.btn-group > .btn.large:last-child,
+.btn-group > .large.dropdown-toggle {
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+.btn-group > .btn:first-child:last-child {
+  margin-left: 0;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-topright: 4px;
+}
+.btn-group > .btn:first-child,
+.radio.btn-group > label:first-of-type {
+  margin-left: 0;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-topleft: 0px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-topright: 4px;
+}

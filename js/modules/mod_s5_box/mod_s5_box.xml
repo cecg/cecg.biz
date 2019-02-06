@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0.0" client="site" method="upgrade">
+	<name>S5 Box</name>
+	<author>Shape5.com</author>
+	<creationDate>September 2009</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>4.0.0</version>
+	<description>The S5 Box allows you to display any module in lightbox style popup activated by a class name. It can display up to 10 S5 Box's by simply adding a class name to any HTML element and a module position to your template XML file. Check out the tutorial on http://www.shape5.com/demo/elegance/s5_box/ for more information.</description>
+	<files>
+		<filename module="mod_s5_box">mod_s5_box.php</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">		
+				<field name="" type="spacer" default="Use the settings below to alter the width of the S5 Box's be sure to publish a module to each corresponding position for the box to be enabled. Please visit the following url for a tutorial http://www.shape5.com/demo/elegance/s5_box/" label="Instructions:" description="" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />   
+				<field name="s5_jsversion" type="list" default="jquery" label="Javascript Library (Will default to jquery in Joomla 3.0+" description="Choose either jquery or mootools javascript library. Jquery will be the default selection in Joomla 3.0+ and ignore this selection.">
+					<option value="jquery">jQuery</option>
+					<option value="mootools">Mootools</option>
+				</field>
+				<field name="s5_boxeffect" type="list" default="elastic" label="Effect Style" description="Choose the effect style for the S5 Box module when initialized via a user click">
+					<option value="elastic">Elastic</option>
+					<option value="fade">Fade</option>
+					<option value="none">None</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />   
+				<field name="s5boxwidth1" type="text" default="35" size="5" label="S5 Box 1 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+
+				<field name="s5boxwidth2" type="text" default="35" size="5" label="S5 Box 2 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="s5boxwidth3" type="text" default="35" size="5" label="S5 Box 3 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+
+				<field name="s5boxwidth4" type="text" default="35" size="5" label="S5 Box 4 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+
+				<field name="s5boxwidth5" type="text" default="35" size="5" label="S5 Box 5 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+						
+				<field name="s5boxwidth6" type="text" default="35" size="5" label="S5 Box 6 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="s5boxwidth7" type="text" default="35" size="5" label="S5 Box 7 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="s5boxwidth8" type="text" default="35" size="5" label="S5 Box 8 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="s5boxwidth9" type="text" default="35" size="5" label="S5 Box 9 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="s5boxwidth10" type="text" default="35" size="5" label="S5 Box 10 Width" description="Enter the width you would like this S5 Box to show, it will be a percentage of the entire screen so entering '50' will show the box centered with a width of 50% of the entire screen" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="moduleclass_sfx" type="text" label="DO NOT CHANGE" default="-s5_box" />
+		
+			</fieldset>
+		</fields>	
+	</config>
+</extension>

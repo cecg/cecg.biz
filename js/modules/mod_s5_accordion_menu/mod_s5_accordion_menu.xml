@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.0.0"
+	client="site"
+	method="upgrade">
+	<name>S5 Accordion Menu</name>
+	<author>Shape5.com - modified from Joomla! Project menu</author>
+	<creationDate>January 2011</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>2.0.0</version>
+	<description>Displays an accordion style menu.</description>
+	<files>
+		<filename module="mod_s5_accordion_menu">mod_s5_accordion_menu.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+		<filename>mod_s5_accordion_menu.xml</filename>
+	</files>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_MENU" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="menutype"
+					type="menu"
+					label="Menu Name" />
+				<field name="parentlinks" type="radio" default="1" label="Enable or Disable First Level Parent Hyperlinks?">
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
+				<field
+					name="startLevel"
+					type="list"
+					default="1"
+					label="Start Level"
+				>
+					<option value="1">J1</option>
+					
+				</field>
+
+				<field
+					name="endLevel"
+					type="list"
+					default="0"
+					label="End Level"
+					>
+					<option value="0">JALL</option>
+					<option value="1">J1</option>
+					
+				</field>
+
+				<field
+					name="showAllChildren"
+					type="radio"
+					default="1"
+					label="Show Submenu Items?">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+
+				<field
+					name="class_sfx"
+					type="text"
+					label="Menu Class Suffix" />
+
+				<field
+					name="window_open"
+					type="text"
+					label="Target Position"
+					description="Javascript values to position a popup window, eg: top=50,left=50,width=200,height=300"
+					/>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

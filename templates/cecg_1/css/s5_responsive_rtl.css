@@ -1,0 +1,10 @@
+/* ANY RTL SPECIFIC RESPONSIVE CALLS GO HERE
+----------------------------------------------------------- */
+
+#s5_responsive_mobile_top_bar_wrap {
+direction:rtl;
+}
+
+#s5_responsive_mobile_drop_down_menu {
+text-align:left;
+}

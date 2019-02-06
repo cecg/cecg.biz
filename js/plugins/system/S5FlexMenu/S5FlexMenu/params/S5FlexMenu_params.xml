@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+		<fields name="params" addfieldpath="/plugins/system/S5FlexMenu/S5FlexMenu/element">
+			<fieldset name="S5FLEX_MENU" label="S5 Flex Menu Parameters">
+				<field name="s5_load_mod" type="radio" default="0" label="Load menu items or module positions in sub area?" description="">
+					<option value="1">Module Positions</option>
+					<option value="0">Menu Item(s)</option>
+				</field>
+				<field name="s5_position" id="s5_position" type="s5sqlmultilistx" default="0" multiple="multiple" size="10" description="Use Ctrl-click to select more than one position." label="Select one or more position" />
+				<field name="s5_columns" type="text" default="1" label="Content columns" description="" />
+				<field name="s5_subtext" type="text" default="" label="Subtext - Leave blank if none" description="" />
+				<field name="s5_group_child" type="s5group" label="Group child items?" description="" />
+<!--			<field name="s5_group_child" type="radio" default="1" label="Group child items?" description="">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>-->
+			</fieldset>
+		</fields>
+</form>

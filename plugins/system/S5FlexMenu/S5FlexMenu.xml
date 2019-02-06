@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>System - S5 Flex Menu</name>
+	<author>Shape5.com</author>
+	<creationDate>June 2011</creationDate>
+	<copyright>This Plugin is released under the GNU/GPL License</copyright>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>1.0</version>
+	<description>The S5 Flex Menu system is a very powerful plugin that provides functionality far beyond the standard Joomla menu system.</description>
+	<files>
+			<filename plugin="S5FlexMenu">S5FlexMenu.php</filename>
+			<folder plugin="S5FlexMenu">S5FlexMenu</folder>
+	</files>
+</extension>

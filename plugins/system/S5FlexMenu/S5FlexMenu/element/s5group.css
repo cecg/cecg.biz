@@ -1,0 +1,6 @@
+fieldset.panelform ul.adminformlist label.radiobtn{
+	min-width:60px;
+    clear: none;
+    display: inline;
+    float: left;	
+}

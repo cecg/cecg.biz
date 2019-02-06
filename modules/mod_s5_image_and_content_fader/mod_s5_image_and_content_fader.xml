@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="3.1.0" method="upgrade" client="site">
+	<name>S5 Image and Content Fader v3</name>
+	<author>Shape5.com</author>
+	<creationDate>July 2010</creationDate>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>3.1.0</version>
+	<description>This module will display images of any url and user defined conent in one of 4 effect transitions.  Choose between actual size and stretch for your images and enter in pixels or percentages for your width, great for responsive/fluid websites!  Powered by Mootools/Jquery but if you experience conflicts you can enable legacy S5 Effects mode (contains less features than Mootools/Jquery version).  </description>
+	<files>
+	<filename module="mod_s5_image_and_content_fader">mod_s5_image_and_content_fader.php</filename>
+                <filename>index.html</filename>
+				<filename>tmpl/default.php</filename>
+				<filename>tmpl/index.html</filename>
+				<filename>js/fader.js</filename>
+				<filename>js/jd.gallery.transitions.js</filename>
+				<filename>js/jd.gallery.transitions.jquery.js</filename>
+				<filename>js/jd.gallery.namespaced.js</filename>
+				<filename>js/jd.gallery.js</filename>	
+				<filename>js/jd.gallery.jquery.js</filename>	
+				<filename>js/jquery-ui.min.js</filename>				
+				<filename>js/mootools.namespaced.js</filename>
+				<filename>images/fleche2.png</filename>
+				<filename>images/blank.gif</filename>
+				<filename>images/loading-bar-black.gif</filename>
+				<filename>images/carrow1.gif</filename>
+				<filename>images/carrow2.gif</filename>
+				<filename>images/fleche1.png</filename>
+				<filename>css/s5imagecontent.css</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+                <field name="pretext" type="textarea" cols="40" rows="4" default="" label="Pre-Text" description="Enter any pre-text message." />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+                <field name="height" type="text" default="183px" label="Height" description="Enter the height of the image fader." />
+                <field name="width" type="text" default="482px" label="Width (ex. 482px or 100%)" description="Enter the width of the image fader in pixels or percentages for responsive/fluid style websites." />
+				<field name="s5stretchimage" type="radio" default="actualsize" label="If above is percentage width, choose image style" description="This option allows you to have your images stretch to fit the width of the image fader for fluid or responsive websites. The images will continue to fit and stretch to whatever width you have set. Height is automatic. Images should all be the same height and width before you upload them, this module will not resize them to be equal. NOTE: Not compatibile with older browsers and some versions of IE. This feature should only be used if the template was designed with a responsive or fluid layout. Some templates contain module overrides where this feature is not available because the overrides were created before this feature was added.">
+					<option value="actualsize">Actual Size</option>
+					<option value="stretch">Stretch to Fit</option>
+				</field>
+				<field name="s5pixelwidth" type="text" default="0px" label="If Stretch to Fit is enabled: Enter in the width in pixels to disable stretching, ex 800px" description="If you are using a responsive style website you can enter in a max width here so your images will no longer stretch once the browser is shrunken to the specified width. If the browser size meets the specified width the height of the module will become the specified height parameter as well. To disable this function simply enter 0px" />    
+				
+                <field name="background" type="text" default="" label="Background Color (leave blank for none) ex:FFFFFF" description="Enter the background color. Leave blank for none." />    
+				<field name="jslibrary" type="radio" default="mootools" label="Choose Mootools or Legacy Mode (S5 Effects)" description="The Mootools/Jquery option has a directory slider and navigation arrows while s5 effects only displays the images and content. Mootools will be used in Joomla 2.5 and lower, and Jquery will be used in Joomla 3.0+">
+					<option value="mootools">Mootools/Jquery</option>
+					<option value="s5effects">Legacy (S5 Effects)</option>
+				</field>
+				<field name="jseffect" type="list" default="fade" label="Choose your effect (mootools/jquery version only)" description="Choose the effect you would like to happen between image transitions.  Mootools/Jquery versions only, S5 effects will just fade in and out">
+					<option value="fade">Fade</option>
+					<option value="continuoushorizontal">Continuous Horizontal</option>
+					<option value="fadeslideleft">Fade Slide Left</option>
+					<option value="continuousvertical">Continuous Vertical</option>
+				</field>
+				
+				<field name="s5_dropdowntext" type="text" default="Open Gallery" label="Drop Tab" description="Enter the text for drop down gallery tab if enabled" />
+				
+				<field name="s5_delay" type="text" default="9000" label="Delay Time" description="Enter the time in milliseconds for slide delay" />
+				
+				<field name="s5_hidecar" type="radio" default="truee" label="Enable or Disable the picture carousel" description="Choose to enable or disable the carousel drop down thumbnail pictures">
+					<option value="truee">Enabled</option>
+					<option value="falsee">Disabled</option>
+				</field>
+				
+				<field name="s5_hidebut" type="radio" default="truee" label="Enable or Disable the navigation arrows" description="Choose to enable or disable the left and right navigation arrows">
+					<option value="truee">Enabled</option>
+					<option value="falsee">Disabled</option>
+				</field>
+				
+				<field name="s5_hidetext" type="radio" default="truee" label="Enable or Disable the slide text" description="Choose to enable or disable the slide text that pops up during each slide transition">>
+					<option value="truee">Enabled</option>
+					<option value="falsee">Disabled</option>
+				</field>
+				
+				<field name="title1" type="textarea" filter="raw" default="" label="Title 1" description="Enter the text for the first slide title." />
+				<field name="title2" type="textarea" filter="raw" default="" label="Title 2" description="Enter the text for the second slide title." />
+				<field name="title3" type="textarea" filter="raw" default="" label="Title 3" description="Enter the text for the third slide title." />
+				<field name="title4" type="textarea" filter="raw" default="" label="Title 4" description="Enter the text for the fourth slide title." />
+				<field name="title5" type="textarea" filter="raw" default="" label="Title 5" description="Enter the text for the fifth slide title." />
+				<field name="title6" type="textarea" filter="raw" default="" label="Title 6" description="Enter the text for the sixth slide title." />
+				<field name="title7" type="textarea" filter="raw" default="" label="Title 7" description="Enter the text for the seventh slide title." />
+				<field name="title8" type="textarea" filter="raw" default="" label="Title 8" description="Enter the text for the eight slide title." />
+				<field name="title9" type="textarea" filter="raw" default="" label="Title 9" description="Enter the text for the nineth slide title." />
+				<field name="title10" type="textarea" filter="raw" default="" label="Title 10" description="Enter the text for the tenth slide title." />
+	
+	</fieldset>			
+	<fieldset name="other" label="Image Settings">				
+				<field name="picture1" type="text" default="" label="Image 1 Location URL" description="Enter the entire URL of image 1." />
+                <field name="picture1link" type="text" default="" label="Image 1 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 1, leave blank if none." />
+
+				<field name="picture1text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 1 Text" description="Enter any text you would like over image 1." />
+			     <field name="picture2" type="text" default="" label="Image 2 Location URL" description="Enter the entire URL of image 2." />
+                <field name="picture2link" type="text" default="" label="Image 2 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 2, leave blank if none." />
+
+				<field name="picture2text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 2 Text" description="Enter any text you would like over image 2." />
+                <field name="picture3" type="text" default="" label="Image 3 Location URL" description="Enter the entire URL of image 3." />
+                <field name="picture3link" type="text" default="" label="Image 3 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 3, leave blank if none." />
+
+				<field name="picture3text" rows="2" filter="raw"  cols="60" type="textarea" default="" label="Image 3 Text" description="Enter any text you would like over image 3." />
+                <field name="picture4" type="text" default="" label="Image 4 Location URL" description="Enter the entire URL of image 4." />
+                <field name="picture4link" type="text" default="" label="Image 4 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 4, leave blank if none." />
+
+				<field name="picture4text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 4 Text" description="Enter any text you would like over image 4." />
+                <field name="picture5" type="text" default="" label="Image 5 Location URL" description="Enter the entire URL of image 5." />
+                <field name="picture5link" type="text" default="" label="Image 5 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 5, leave blank if none." />
+
+				<field name="picture5text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 5 Text" description="Enter any text you would like over image 5." />
+                <field name="picture6" type="text" default="" label="Image 6 Location URL" description="Enter the entire URL of image 6." />
+                <field name="picture6link" type="text" default="" label="Image 6 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 6, leave blank if none." />
+
+				<field name="picture6text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 6 Text" description="Enter any text you would like over image 6." />
+                <field name="picture7" type="text" default="" label="Image 7 Location URL" description="Enter the entire URL of image 7." />
+                <field name="picture7link" type="text" default="" label="Image 7 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 7, leave blank if none." />
+				<field name="picture7text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 7 Text" description="Enter any text you would like over image 7." />
+                <field name="picture8" type="text" default="" label="Image 8 Location URL" description="Enter the entire URL of image 8." />
+                <field name="picture8link" type="text" default="" label="Image 8 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 8, leave blank if none." />
+
+				<field name="picture8text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 8 Text" description="Enter any text you would like over image 8." />
+                <field name="picture9" type="text" default="" label="Image 9 Location URL" description="Enter the entire URL of image 9." />
+                <field name="picture9link" type="text" default="" label="Image 9 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 9, leave blank if none." />
+				<field name="picture9text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 9 Text" description="Enter any text you would like over image 9." />
+               
+			   <field name="picture10" type="text" default="" label="Image 10 Location URL" description="Enter the entire URL of image 10." />
+                <field name="picture10link" type="text" default="" label="Image 10 Hyperlink URL (leave blank if none)" description="Enter the entire Hyperlink URL (leave blank if none) of image 10, leave blank if none." />
+
+				<field name="picture10text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 10 Text" description="Enter any text you would like over image 10." />
+</fieldset>
+		</fields>
+	</config>
+</extension>

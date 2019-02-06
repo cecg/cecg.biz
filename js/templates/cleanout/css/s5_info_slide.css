@@ -1,0 +1,43 @@
+.s5_is_slide{
+  float: left; 
+  position: absolute; 
+  z-index:0;
+  overflow: hidden;
+  left:0; 
+  bottom:0;  
+  background:#000000;
+  visibility: visible; 
+  margin:0px !important;
+  padding:0px !important;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+
+.s5_is{ 
+  overflow: hidden; 
+  position: relative;
+  padding:0;
+  cursor:pointer;
+}
+
+.s5_is_display {
+  position: absolute; 
+  top: 0;
+  z-index:1;
+  font-size:1em;
+  padding-left:15px;
+  padding-right:15px;
+  padding-bottom:15px;
+  color:#CCCCCC;  
+}
+
+.s5_is_display h3 {
+  white-space:nowrap;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-size:1.1em;
+  color:#FFFFFF;
+}

@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vertex>
+    <details>
+        <title>Vertex Framework</title>
+        <author>Shape5.com</author>
+        <copyright>Shape5</copyright>
+        <authorEmail>contact@shape5.com</authorEmail>
+        <authorUrl>http://www.shape5.com</authorUrl>
+        <frameworkVersion>2.2.0</frameworkVersion>
+    </details>
+    <languages folder="xml/language">
+        <language tag="en-GB">en-GB/en-GB.tpl_vertex.ini</language>
+    </languages>
+    <admin>
+        <fieldset name="s51" label="TPL_FIELD_LFA_LABEL">
+				<field name="xml_s5_font_resizer" type="radio" vars="yes:no|Yes:No" default="yes" label="TPL_FIELD_FONTRESIZER_LABEL" description="TPL_FIELD_FONTRESIZER_DESC" />
+				<field name="xml_s5_fonts" type="select:list" default="Cantarell" label="TPL_FIELD_SITEFONT_LABEL" description="TPL_FIELD_SITEFONT_DESC"></field>
+				<field name="xml_s5_fstyle" type="text" label="TPL_FIELD_FONTSTYLE_LABEL" description="TPL_FIELD_FONTSTYLE_DESC" />
+				<field name="xml_s5_fixed_fluid" type="select:list" default="fixed" label="TPL_FIELD_FIXEDFLUID_LABEL" description="TPL_FIELD_FIXEDFLUID_DESC">
+					<option value="px">TPL_FIELD_FIXEDFLUID_O1</option>
+					<option value="%">TPL_FIELD_FIXEDFLUID_O2</option>
+				</field>
+				<field name="xml_s5_body_width" type="text" default="955" label="TPL_FIELD_BODYWIDTH_LABEL" description="TPL_FIELD_BODYWIDTH_DESC" />
+				<field name="xml_s5_max_body_width" type="text" default="" label="TPL_FIELD_MAXBODYWIDTH_LABEL" description="TPL_FIELD_MAXBODYWIDTH_DESC" />
+				<field name="xml_s5_left_width" type="text" default="240" label="TPL_FIELD_LEFTWIDTH_LABEL" description="TPL_FIELD_LEFTWIDTH_DESC" />
+				<field name="xml_s5_left_inset_width" type="text" default="200" label="TPL_FIELD_LEFTINSETWIDTH_LABEL" description="TPL_FIELD_LEFTINSETWIDTH_DESC" />
+				<field name="xml_s5_right_width" type="text" default="238" label="TPL_FIELD_RIGHTWIDTH_LABEL" description="TPL_FIELD_RIGHTWIDTH_DESC" />
+				<field name="xml_s5_right_inset_width" type="text" default="237" label="TPL_FIELD_RIGHTINSETWIDTH_LABEL" description="TPL_FIELD_RIGHTINSETWIDTH_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_notice" type="spacer" label="TPL_FIELD_RESPON_DESC"  />
+				<field version="ge,2.0" name="xml_s5_responsive" type="radio" vars="enabled:disabled|Enabled:Disabled" default="disabled" label="TPL_FIELD_RESPONSIVE_LABEL" description="TPL_FIELD_RESPONSIVE_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_ie" type="radio" vars="enabled:disabled|Enabled:Disabled" default="disabled" label="TPL_FIELD_RESPONSIVEIE_LABEL" description="TPL_FIELD_RESPONSIVEIE_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_tablet_hide" type="multselect" vars="#s5_header_area1,#s5_top_row1_area1,#s5_top_row2_area1,#s5_top_row3_area1,#s5_above_columns_wrap1,#s5_middle_top_wrap,#s5_above_body_wrap,#s5_below_body_wrap,#s5_left_top_wrap,#s5_left_wrap,#s5_left_inset_wrap,#s5_left_bottom_wrap,#s5_right_top_wrap,#s5_right_wrap,#s5_right_inset_wrap,#s5_right_bottom_wrap,#s5_middle_bottom_wrap,#s5_below_columns_wrap1,#s5_bottom_row1_area1,#s5_bottom_row2_area1,#s5_bottom_row3_area1,#s5_footer_area1,#s5_custom_1,#s5_custom_2,#s5_custom_3,#s5_custom_4,#s5_custom_5,#s5_custom_6" default="" label="TPL_FIELD_RESPONSIVETABLET_LABEL" description="TPL_FIELD_RESPONSIVETABLET_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_hide" type="multselect" vars="#s5_header_area1,#s5_top_row1_area1,#s5_top_row2_area1,#s5_top_row3_area1,#s5_above_columns_wrap1,#s5_middle_top_wrap,#s5_above_body_wrap,#s5_below_body_wrap,#s5_left_top_wrap,#s5_left_wrap,#s5_left_inset_wrap,#s5_left_bottom_wrap,#s5_right_top_wrap,#s5_right_wrap,#s5_right_inset_wrap,#s5_right_bottom_wrap,#s5_middle_bottom_wrap,#s5_below_columns_wrap1,#s5_bottom_row1_area1,#s5_bottom_row2_area1,#s5_bottom_row3_area1,#s5_footer_area1,#s5_custom_1,#s5_custom_2,#s5_custom_3,#s5_custom_4,#s5_custom_5,#s5_custom_6" default="" label="TPL_FIELD_RESPONSIVEMOBILE_LABEL" description="TPL_FIELD_RESPONSIVEMOBILE_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_column_increase" type="radio" vars="enabled:disabled|Enabled:Disabled" default="enabled" label="TPL_FIELD_RESPONSIVECOLUMNINCREASE_LABEL" description="TPL_FIELD_RESPONSIVECOLUMNINCREASE_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_columns_small_tablet" type="select:list" default="default" label="TPL_FIELD_RESPONSIVETABLETCOLUMNS_LABEL" description="TPL_FIELD_RESPONSIVETABLETCOLUMNS_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVETABLETCOLUMNS_OPTION1</option>
+					<option value="reduce">TPL_FIELD_RESPONSIVETABLETCOLUMNS_OPTION2</option>
+					<option value="single">TPL_FIELD_RESPONSIVETABLETCOLUMNS_OPTION3</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_center_single_column" type="select:list" default="default" label="TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_LABEL" description="TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_OPTION1</option>
+					<option value="950">TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_OPTION2</option>
+					<option value="900">TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_OPTION3</option>
+					<option value="850">TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_OPTION4</option>
+					<option value="800">TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_OPTION5</option>
+					<option value="750">TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_OPTION6</option>
+					<option value="700">TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_OPTION7</option>
+					<option value="650">TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_OPTION8</option>
+					<option value="600">TPL_FIELD_RESPONSIVECENTERSINGLECOLUMN_OPTION9</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_notice" type="spacer" label="TPL_FIELD_RESPONROWWIDTHS_DESC"  />
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_top_row_1" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSTOPROW1_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSTOPROW1_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_top_row_2" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSTOPROW2_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSTOPROW2_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_top_row_3" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSTOPROW3_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSTOPROW3_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_above_columns" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSABOVECOLUMNS_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSABOVECOLUMNS_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_middle_top" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSMIDDLETOP_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSMIDDLETOP_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_above_body" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSABOVEBODY_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSABOVEBODY_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_middle_bottom" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSMIDDLEBOTTOM_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSMIDDLEBOTTOM_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_below_body" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSBELOWBODY_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSBELOWBODY_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_below_columns" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSBELOWCOLUMNS_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSBELOWCOLUMNS_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_bottom_row_1" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSBOTTOMROW1_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSBOTTOMROW1_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_bottom_row_2" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSBOTTOMROW2_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSBOTTOMROW2_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_row_widths_bottom_row_3" type="select:list" default="default" label="TPL_FIELD_RESPONSIVEROWWIDTHSBOTTOMROW3_LABEL" description="TPL_FIELD_RESPONSIVEROWWIDTHSBOTTOMROW3_DESC">
+					<option value="default">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION1</option>
+					<option value="1:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION2</option>
+					<option value="2:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION3</option>
+					<option value="3:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION4</option>
+					<option value="4:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION5</option>
+					<option value="5:1100">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION6</option>
+					<option value="1:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION7</option>
+					<option value="2:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION8</option>
+					<option value="3:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION9</option>
+					<option value="4:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION10</option>
+					<option value="5:1050">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION11</option>
+					<option value="1:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION12</option>
+					<option value="2:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION13</option>
+					<option value="3:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION14</option>
+					<option value="4:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION15</option>
+					<option value="5:1000">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION16</option>
+					<option value="1:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION17</option>
+					<option value="2:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION18</option>
+					<option value="3:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION19</option>
+					<option value="4:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION20</option>
+					<option value="5:950">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION21</option>
+					<option value="1:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION22</option>
+					<option value="2:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION23</option>
+					<option value="3:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION24</option>
+					<option value="4:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION25</option>
+					<option value="5:900">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION26</option>
+					<option value="1:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION27</option>
+					<option value="2:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION28</option>
+					<option value="3:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION29</option>
+					<option value="4:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION30</option>
+					<option value="5:850">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION31</option>
+					<option value="1:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION32</option>
+					<option value="2:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION33</option>
+					<option value="3:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION34</option>
+					<option value="4:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION35</option>
+					<option value="5:800">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION36</option>
+					<option value="1:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION37</option>
+					<option value="2:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION38</option>
+					<option value="3:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION39</option>
+					<option value="4:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION40</option>
+					<option value="5:750">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION41</option>
+					<option value="1:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION42</option>
+					<option value="2:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION43</option>
+					<option value="3:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION44</option>
+					<option value="4:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION45</option>
+					<option value="5:700">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION46</option>
+					<option value="1:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION47</option>
+					<option value="2:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION48</option>
+					<option value="3:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION49</option>
+					<option value="4:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION50</option>
+					<option value="5:650">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION51</option>
+					<option value="1:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION52</option>
+					<option value="2:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION53</option>
+					<option value="3:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION54</option>
+					<option value="4:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION55</option>
+					<option value="5:600">TPL_FIELD_RESPONSIVEROWWIDTHS_OPTION56</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_notice" type="spacer" label="TPL_FIELD_RESPONMOBILE_DESC"  />
+				<field version="ge,2.0" name="xml_s5_fonts_responsive_mobile_bar" type="select:list" default="Oswald" label="TPL_FIELD_RESPONSIVEBARFONT_LABEL" description="TPL_FIELD_RESPONSIVEBARFONT_DESC"></field>
+				<field version="ge,2.0" name="xml_s5_fstyle_responsive_mobile_bar" type="text" label="TPL_FIELD_RESPONSIVEBARFONTSTYLE_LABEL" description="TPL_FIELD_RESPONSIVEBARFONTSTYLE_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_style" type="select:list" default="light" label="TPL_FIELD_RESPONSIVEBARSTYLE_LABEL" description="TPL_FIELD_RESPONSIVEBARSTYLE_DESC">
+					<option value="dark">TPL_FIELD_RESPONSIVEBARSTYLE_OPTION1</option>
+					<option value="light">TPL_FIELD_RESPONSIVEBARSTYLE_OPTION2</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_static" type="radio" vars="enabled:disabled|Enabled:Disabled" default="disabled" label="TPL_FIELD_RESPONSIVEBARSTATIC_LABEL" description="TPL_FIELD_RESPONSIVEBARSTATIC_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_start" type="text:6:6" default="272727" size="6" label="TPL_FIELD_RESPONSIVEGRADSTART_LABEL" description="TPL_FIELD_RESPONSIVEGRADSTART_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_stop" type="text:6:6" default="0B0B0B" size="6" label="TPL_FIELD_RESPONSIVEGRADSTOP_LABEL" description="TPL_FIELD_RESPONSIVEGRADSTOP_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_font_color" type="text:6:6" default="FFFFFF" size="6" label="TPL_FIELD_RESPONSIVEFONTCOLOR_LABEL" description="TPL_FIELD_RESPONSIVEFONTCOLOR_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_active_color" type="text:6:6" default="BBBABA" size="6" label="TPL_FIELD_RESPONSIVEACTIVECOLOR_LABEL" description="TPL_FIELD_RESPONSIVEACTIVECOLOR_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_shadow_opacity" type="text" default="0.6" label="TPL_FIELD_RESPONSIVEOPACITY_LABEL" description="TPL_FIELD_RESPONSIVEOPACITY_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_menu" type="radio" vars="enabled:disabled|Enabled:Disabled" default="enabled" label="TPL_FIELD_RESPONSIVEENABMENU_LABEL" description="TPL_FIELD_RESPONSIVEENABMENU_DESC" />
+				<field name="s5_responsive_menu" version="ge,2.0" type="menu" default="mainmenu" label="TPL_FIELD_RESPONSIVEMENU_LABEL" description="TPL_FIELD_RESPONSIVEMENU_DESC" />	
+				<field version="ge,2.0" name="xml_s5_responsive_menu_end_level" default="10" type="select:list" label="TPL_FIELD_RESPONSIVELEVELS_LABEL" description="TPL_FIELD_RESPONSIVELEVELS_DESC" >
+					<option value="0">TPL_FIELD_OPTIONALL</option>
+					<option value="1">TPL_FIELD_OPTION1</option>
+					<option value="2">TPL_FIELD_OPTION2</option>
+					<option value="3">TPL_FIELD_OPTION3</option>
+					<option value="4">TPL_FIELD_OPTION4</option>
+					<option value="5">TPL_FIELD_OPTION5</option>
+					<option value="6">TPL_FIELD_OPTION6</option>
+					<option value="7">TPL_FIELD_OPTION7</option>
+					<option value="8">TPL_FIELD_OPTION8</option>
+					<option value="9">TPL_FIELD_OPTION9</option>
+					<option value="10">TPL_FIELD_OPTION10</option>
+				</field>
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_active" type="radio" vars="enabled:disabled|Enabled:Disabled" default="enabled" label="TPL_FIELD_RESPONSIVEACTENAB_LABEL" description="TPL_FIELD_RESPONSIVEACTENAB_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_search" type="radio" vars="enabled:disabled|Enabled:Disabled" default="enabled" label="TPL_FIELD_RESPONSIVESEARCHENAB_LABEL" description="TPL_FIELD_RESPONSIVESEARCHENAB_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_bar_login_register_notice" type="spacer" label="TPL_FIELD_RESPONLOGREG_DESC"  />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_links" type="radio" vars="enabled:disabled|Enabled:Disabled" default="enabled" label="TPL_FIELD_RESPONSIVELINKSENAB_LABEL" description="TPL_FIELD_RESPONSIVELINKSENAB_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_desktop_text" type="text" default="Desktop Version" label="TPL_FIELD_RESPONSIVEDESKTOPTEXT_LABEL" description="TPL_FIELD_RESPONSIVEDESKTOPTEXT_DESC" />
+				<field version="ge,2.0" name="xml_s5_responsive_mobile_text" type="text" default="Mobile Version" label="TPL_FIELD_RESPONSIVEMOBILETEXT_LABEL" description="TPL_FIELD_RESPONSIVEMOBILETEXT_DESC" />
+		</fieldset>	
+		<fieldset name="s52" label="TPL_FIELD_MO_LABEL">	
+				<field name="xml_s5_show_menu" type="radio" vars="show:hide|Show:Hide" default="show" label="TPL_FIELD_MAINMENU_SOH" description="" />
+				<field name="s5_menu_type" type="menu" default="mainmenu" label="TPL_FIELD_MAINMENU_LABEL" description="TPL_FIELD_MAINMENU_DESC" />			
+				<field name="s5_maxdepth" type="text" default="10" label="TPL_FIELD_MAINMENU_LEVELS" description="" />
+				<field name="s5_duration" type="text" default="1000" label="TPL_FIELD_MAINMENU_OD" description="" />
+				<field name="s5_hide_delay" type="text" default="500" label="TPL_FIELD_MAINMENU_HD" description="" />
+				<field name="s5_opacity" type="text" default="100" label="Opacity" description="" />
+				<field name="s5_orientation" type="select:list" default="horizontal" label="TPL_FIELD_MAINMENU_ORIEN" description="">
+					<option value="horizontal">TPL_FIELD_MAINMENU_ORIEN_H</option>
+					<option value="vertical">TPL_FIELD_MAINMENU_ORIEN_V</option>
+				</field>
+				<field name="s5_effect" type="select:list" default="2" label="TPL_FIELD_MAINMENU_EFFECT" description="">
+					<option value="0">TPL_FIELD_MAINMENU_EFFECT_S</option>
+					<option value="1">TPL_FIELD_MAINMENU_EFFECT_F</option>
+					<option value="2">TPL_FIELD_MAINMENU_EFFECT_SF</option>
+					<option value="3">TPL_FIELD_MAINMENU_EFFECT_SP</option>
+				</field>	
+		</fieldset>	
+		<fieldset name="s53" label="TPL_FIELD_RMS_LABEL">
+		<field name="s53spacer_notice" type="spacer" label="TPL_FIELD_ROW_DESC"  />
+				<field name="xml_s5_top_row1_calculation" type="select:list" default="automatic" label="TPL_FIELD_TOPROW1MODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_top_row1_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_TOPROW1MANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+				<field name="xml_s5_top_row2_calculation" type="select:list" default="automatic" label="TPL_FIELD_TOPROW2MODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_top_row2_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_TOPROW2MANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+				<field name="xml_s5_top_row3_calculation" type="select:list" default="automatic" label="TPL_FIELD_TOPROW3MODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_top_row3_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_TOPROW3MANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+				<field name="xml_s5_above_columns_calculation" type="select:list" default="automatic" label="TPL_FIELD_ABOVECOLUMNSWRAP_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_above_columns_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_ABOVECOLUMNSWRAPMANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />	
+				<field name="xml_s5_middle_top_calculation" type="select:list" default="automatic" label="TPL_FIELD_MIDDLETOPMODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_middle_top_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_MIDDLETOPMANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />						
+				<field name="xml_s5_above_body_calculation" type="select:list" default="automatic" label="TPL_FIELD_ABOVEBODYMODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_above_body_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_ABOVEBODYMANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+				<field name="xml_s5_middle_bottom_calculation" type="select:list" default="automatic" label="TPL_FIELD_MIDDLEBOTTOMMODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_middle_bottom_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_MIDDLEBOTTOMMANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+				<field name="xml_s5_below_body_calculation" type="select:list" default="automatic" label="TPL_FIELD_BELOWBODYMODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_below_body_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_BELOWBODYMANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+				<field name="xml_s5_below_columns_calculation" type="select:list" default="automatic" label="TPL_FIELD_BELOWCOLUMNS_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_below_columns_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_BELOWCOLUMNSWRAPMANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />	
+				<field name="xml_s5_bottom_row1_calculation" type="select:list" default="automatic" label="TPL_FIELD_BOTTOMROW1MODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_bottom_row1_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_BOTTOM1MANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+				<field name="xml_s5_bottom_row2_calculation" type="select:list" default="automatic" label="TPL_FIELD_BOTTOMROW2MODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_bottom_row2_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_BOTTOM2MANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+				<field name="xml_s5_bottom_row3_calculation" type="select:list" default="automatic" label="TPL_FIELD_BOTTOMROW3MODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>
+				</field>	
+				<field name="xml_s5_bottom_row3_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_BOTTOM3MANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+				<field name="xml_s5_drop_down_calculation" type="select:list" default="automatic" label="TPL_FIELD_DROPDOWNMODULES_LABEL" description="TPL_FIELD_ROWMODCALC_DESC">
+					<option value="automatic">TPL_FIELD_AUTOMATICWIDTHS_01</option>
+					<option value="2">TPL_FIELD_ROWSIZE2_LABEL</option>
+					<option value="3">TPL_FIELD_ROWSIZE3_LABEL</option>
+					<option value="4">TPL_FIELD_ROWSIZE4_LABEL</option>
+					<option value="5">TPL_FIELD_ROWSIZE5_LABEL</option>
+					<option value="6">TPL_FIELD_ROWSIZE6_LABEL</option>   
+				</field>	
+				<field name="xml_s5_drop_down_manual_widths" type="textarea" cols="20" rows="1" default="15,25,20,10,13,17" label="TPL_FIELD_DROPDOWNMANUALWIDTHS_LABEL" description="TPL_FIELD_MODULEWIDTHS_DESC" />
+		</fieldset>	
+		
+		<fieldset version="le,1.0" name="s54" label="TPL_FIELD_MDS_LABEL">			
+		
+				<field name="spacer_notice" type="spacer" label="TPL_FIELD_MOBILE_DESC"  />
+				<field name="xml_s5_mobile_device_enable_disable" type="radio" vars="enabled:disabled|Ensabled:Disabled" default="disabled" label="TPL_FIELD_MOBILELAYOUT_LABEL" description="TPL_FIELD_MOBILELAYOUT_DESC" />
+				<field name="xml_s5_mobile_device_menu_subs" type="select:list" default="first" label="TPL_FIELD_MOBILEMENUSUBS_LABEL" description="TPL_FIELD_MOBILEMENUSUBS_DESC">
+					<option value="first">TPL_FIELD_MOBILEMENUSUBS_01</option>
+					<option value="all">TPL_FIELD_MOBILEMENUSUBS_02</option>
+				</field>
+				<field name="xml_s5_mobile_device_menu_title" type="text" default="Select Menu" label="TPL_FIELD_SELECTMENU_LABEL" description="TPL_FIELD_SELECTMENU_DESC" />
+				<field name="xml_s5_mobile_device_login" type="radio" vars="enabled:disabled|Ensabled:Disabled" default="enabled" label="TPL_FIELD_SHOWLOGIN_LABEL" description="TPL_FIELD_SHOWLOGIN_DESC" />
+				<field name="xml_s5_mobile_device_register" type="radio" vars="enabled:disabled|Ensabled:Disabled" default="enabled" label="TPL_FIELD_MOBILEREGISTER_LABEL" description="TPL_FIELD_MOBILEREGISTER_DESC" />
+				<field name="xml_s5_mobile_device_pc_text" type="text" default="Show me the PC Version" label="TPL_FIELD_MOBILESHOWPC_LABEL" description="TPL_FIELD_MOBILESHOWPC_DESC" />
+		</fieldset>	
+		<fieldset name="s56" label="TPL_FIELD_GO_LABEL">
+				<field name="xml_s5_compress_js" type="radio" vars="yes:no|Yes:No" default="no" label="TPL_FIELD_JSCOMPRESSION_LABEL" description="TPL_FIELD_JSCOMPRESSION_DESC" />
+				<field name="xml_s5_compress_css" type="radio" vars="yes:no|Yes:No" default="no" label="TPL_FIELD_CSSCOMPRESSION_LABEL" description="TPL_FIELD_CSSCOMPRESSION_DESC" />
+				<field name="xml_s5_compress_cache" type="text" default="900" label="TPL_FIELD_CACHECOMPRESSION_LABEL" description="TPL_FIELD_CACHECOMPRESSION_DESC" />
+				<field name="xml_s5_thirdparty" type="radio" vars="enabled:disabled|Ensabled:Disabled" default="enabled" label="TPL_FIELD_THIRDPARTY_LABEL" description="TPL_FIELD_THIRDPARTY_DESC" />
+				<field name="xml_s5_images_width" type="text" default="" label="TPL_FIELD_IMAGESWIDTH_LABEL" description="TPL_FIELD_IMAGESWIDTH_DESC" />
+				<field name="xml_s5_auto_height" type="radio" vars="yes:no|Yes:No" default="yes" label="TPL_FIELD_AUTOHEIGHT_LABEL" description="TPL_FIELD_AUTOHEIGHT_DESC" />
+				<field name="xml_s5_max_width" type="radio" vars="yes:no|Yes:No" default="yes" label="TPL_FIELD_MAXWIDTH_LABEL" description="TPL_FIELD_MAXWIDTH_DESC" />
+				<field name="xml_s5_seourl" type="text" label="TPL_FIELD_SEOURL_LABEL" description="TPL_FIELD_SEOURL_DESC" />
+				<field name="xml_s5_additional_scripts1" filter="raw" type="textarea" default="" label="TPL_FIELD_ADDT1_LABEL" description="TPL_FIELD_ADDT1_DESC" />
+				<field name="xml_s5_additional_scripts2" filter="raw" type="textarea" default="" label="TPL_FIELD_ADDT2_LABEL" description="TPL_FIELD_ADDT2_DESC" />
+				<field name="spacer_notice" type="spacer" label="TPL_FIELD_SHOWFRONTPAGETITLE_DESC" />
+				<field name="s5_hide_component_items" type="menuitems" default="-1" size="10" description="TPL_FIELD_SHOWFRONTPAGE_DESC" label="TPL_FIELD_SHOWFRONTPAGE_LABEL" />
+				<field name="xml_s5_ie6plugin" type="radio" vars="yes:no|Yes:No" default="yes" label="TPL_FIELD_IE6WARNING_LABEL" description="TPL_FIELD_IE6WARNING_DESC" />
+				<field name="xml_s5_scrolltotop" type="radio" vars="yes:no|Yes:No" default="yes" label="TPL_FIELD_SCROLLA_LABEL" description="TPL_FIELD_SCROLLA_DESC" />
+				<field name="spacerrasdf_notice" type="spacer" label="TPL_FIELD_LOGOUTLOGINREGISTER_DESC"  />
+				<field name="xml_s5_login" type="text" label="TPL_FIELD_LOGINTEXT_LABEL" description="TPL_FIELD_LOGINTEXT_DESC" />
+				<field name="xml_s5_loginout" type="text" label="TPL_FIELD_LOGOUTTEXT_LABEL" description="TPL_FIELD_LOGOUTTEXT_DESC" />
+				<field name="xml_s5_register" type="text" label="TPL_FIELD_REGISTEREXT_LABEL" description="TPL_FIELD_REGISTERTEXT_DESC" />	
+				<field name="xml_s5_login_url" type="text" default="" label="TPL_FIELD_LOGINURL_LABEL" description="TPL_FIELD_LOGINURL_DESC" />
+				<field name="xml_s5_register_url" type="text" default="" label="TPL_FIELD_REGISTERURL_LABEL" description="TPL_FIELD_REGISTERURL_DESC" />
+		</fieldset>	
+		<fieldset name="s55" label="TPL_FIELD_JAVA_LABEL">
+				<field name="javascripts_instructions" type="spacer" label="TPL_FIELD_JAVASCRIPTS_DESC" />
+				<field name="xml_s5_multibox" type="radio" vars="yes:no|Yes:No" default="yes" label="TPL_FIELD_ENABLEMULTIBOX_LABEL" description="TPL_FIELD_ENABLEMULTIBOX_DESC" />
+				<field name="xml_s5_multioverlay" type="radio" vars="yes:no|Yes:No" default="yes" label="TPL_FIELD_ENABLEMULTIBOXOVERLAY_LABEL" description="TPL_FIELD_ENABLEMULTIBOXOVERLAY_DESC" />
+				<field name="xml_s5_multicontrols" type="radio" vars="yes:no|Yes:No" default="yes" label="TPL_FIELD_ENABLEMULTIBOXCONTROLS_LABEL" description="TPL_FIELD_ENABLEMULTIBOXCONTROLS_DESC" />
+				<field name="xml_s5_multimaxheight" type="text" label="Multibox Max Height" default="400" description="Set the maximum height of multibox images." />
+				<field name="xml_s5_multimaxwidth" type="text" label="Multibox Max Width" default="600" description="Set the maximum width of multibox images." />	
+				<field name="xml_s5_multimovieheight" type="text" label="Multibox Movie Height" default="300" description="Set the height of multibox movies." />
+				<field name="xml_s5_multimoviewidth" type="text" label="Multibox Movie Width" default="400" description="Set the width of multibox movies." />					
+				<field name="xml_s5_multitooltips" type="radio" vars="true:false|True:False" default="false" label="Multibox Tooltips" description="These tooltips will show the title of the images used for multibox if enabled." />
+				<field name="xml_s5_multirollover" type="radio" vars="true:false|True:False" default="false" label="Multibox Rollover" description="Images will turn slightly opaque on hover with this feature enabled." />
+				<field name="xml_s5_info_slide" type="radio" vars="yes:no|Yes:No" default="no" label="Enable Info Slide" description="This script will create content areas that slide over specified images. The content area can be any custom html with an opaque background." />
+				<field name="xml_s5_lazyload" type="select:list" default="disabled" label="TPL_FIELD_ENABLELAZYLOAD_LABEL" description="TPL_FIELD_ENABLELAZYLOAD_DESC">
+					<option value="disabled">TPL_FIELD_ENABLELAZYLOAD_01</option>
+					<option value="all">TPL_FIELD_ENABLELAZYLOAD_02</option>
+					<option value="individuals">TPL_FIELD_ENABLELAZYLOAD_03</option>
+				</field>
+				<field name="xml_s5_tooltips" type="radio" vars="yes:no|Yes:No" default="no" label="TPL_FIELD_ENABLETOOLTIPS_LABEL" description="TPL_FIELD_ENABLETOOLTIPSS_DESC" />
+				<field name="xml_s5_resize_columns" type="select:list" default="main" label="TPL_FIELD_ENABLERESIZECOLUMNS_LABEL" description="TPL_FIELD_ENABLERESIZECOLUMNS_DESC">
+					<option value="disabled">TPL_FIELD_ENABLERESIZECOLUMNS_01</option>
+					<option value="all">TPL_FIELD_ENABLERESIZECOLUMNS_02</option>
+					<option value="main">TPL_FIELD_ENABLERESIZECOLUMNS_03</option>
+				</field>
+				<field name="xml_s5_resize_columns_delay" type="text" default="500" size="6" label="TPL_FIELD_ENABLERESIZECOLUMNSDELAY_LABEL" description="TPL_FIELD_ENABLERESIZECOLUMNSDELAY_DESC" />
+		</fieldset>			
+		<fieldset name="s57" label="TPL_FIELD_FTS_LABEL">					
+			<field name="spacer_notice" label="TPL_FIELD_TABINSTRUCTIONS_LABEL" type="spacer" />
+			<field name="xml_s5_lr_tab_border" type="text:6:6" default="838383" size="6" label="TPL_FIELD_FIXEDTABBORDER_LABEL" description="TPL_FIELD_FIXEDTABBORDER_DESC" />
+			<field name="xml_s5_lr_tab_color" type="text:6:6" default="FFFFFF" size="6" label="TPL_FIELD_FIXEDTABBACKGROUND_LABEL" description="TPL_FIELD_FIXEDTABBACKGROUND_DESC" />
+			<field name="xml_s5_lr_tab_font" type="text:6:6" default="323232" size="6" label="TPL_FIELD_FIXEDTABFONTCOLOR_LABEL" description="TPL_FIELD_FIXEDTABFONTCOLOR_DESC" />
+			<field name="spacer_custom" type="spacer" label="TPL_FIELD_FIXEDTAB1LABEL_LABEL" />
+			<field name="xml_s5_lr_tab1_text" type="text" label="TPL_FIELD_FIXEDTAB1TEXT_LABEL" description="TPL_FIELD_FIXEDTAB1TEXT_DESC" />
+			<field name="xml_s5_lr_tab1_vp" type="text" default="30" label="TPL_FIELD_FIXEDTAB1VERTICAL_LABEL" description="TPL_FIELD_FIXEDTAB1VERTICAL_DESC" />
+			<field name="xml_s5_lr_tab1_height" type="text" default="100" label="TPL_FIELD_FIXEDTAB1HEIGHT_LABEL" description="TPL_FIELD_FIXEDTAB1HEIGHT_DESC" />
+			<field name="xml_s5_lr_tab1_class" type="text" label="TPL_FIELD_FIXEDTAB1CLASS_LABEL" description="TPL_FIELD_FIXEDTAB1CLASS_DESC" />
+			<field name="xml_s5_lr_tab1_click" type="text" label="TPL_FIELD_FIXEDTAB1CLICK_LABEL" description="TPL_FIELD_FIXEDTAB1CLICK_DESC" />
+			<field name="xml_s5_lr_tab1_left_right" type="select:list" default="right" label="TPL_FIELD_FIXEDTAB1POSITION_LABEL" description="TPL_FIELD_FIXEDTAB1POSITION_DESC">
+				<option value="left">TPL_FIELD_FIXEDTAB1POSITION_01</option>
+				<option value="right">TPL_FIELD_FIXEDTAB1POSITION_02</option>
+			</field>
+			<field name="1spacer_custom" type="spacer" label="TPL_FIELD_FIXEDTAB2LABEL_LABEL" />
+			<field name="xml_s5_lr_tab2_text" type="text" label="TPL_FIELD_FIXEDTAB2TEXT_LABEL" description="TPL_FIELD_FIXEDTAB2TEXT_DESC" />
+			<field name="xml_s5_lr_tab2_vp" type="text" default="30" label="TPL_FIELD_FIXEDTAB2VERTICAL_LABEL" description="TPL_FIELD_FIXEDTAB2VERTICAL_DESC" />
+			<field name="xml_s5_lr_tab2_height" type="text" default="100" label="TPL_FIELD_FIXEDTAB2HEIGHT_LABEL" description="TPL_FIELD_FIXEDTAB2HEIGHT_DESC" />
+			<field name="xml_s5_lr_tab2_class" type="text" label="TPL_FIELD_FIXEDTAB2CLASS_LABEL" description="TPL_FIELD_FIXEDTAB2CLASS_DESC" />
+			<field name="xml_s5_lr_tab2_click" type="text" label="TPL_FIELD_FIXEDTAB2CLICK_LABEL" description="TPL_FIELD_FIXEDTAB2CLICK_DESC" />
+			<field name="xml_s5_lr_tab2_left_right" type="select:list" default="right" label="TPL_FIELD_FIXEDTAB2POSITION_LABEL" description="TPL_FIELD_FIXEDTAB2POSITION_DESC">
+				<option value="left">TPL_FIELD_FIXEDTAB2POSITION_01</option>
+				<option value="right">TPL_FIELD_FIXEDTAB2POSITION_02</option>
+			</field>
+		</fieldset>
+		
+		<fieldset name="s58" label="TPL_FIELD_DDS_LABEL">	
+			<field name="dropdown_instructions" type="spacer" label="TPL_FIELD_DD_DESC" />
+			<field name="xml_s5_drop_down_overlay" type="select:list" default="right" label="TPL_FIELD_DDS_OVERLAY_LABEL" description="TPL_FIELD_DDS_OVERLAY_DESC">
+				<option value="overlay">TPL_FIELD_DDS_OVERLAY1</option>
+				<option value="push_down">TPL_FIELD_DDS_OVERLAY2</option>
+			</field>
+			<field name="xml_s5_drop_down_width" type="select:list" default="right" label="TPL_FIELD_DDS_WIDTH_LABEL" description="TPL_FIELD_DDS_WIDHT_DESC">
+				<option value="full">TPL_FIELD_DDS_WIDTH1</option>
+				<option value="body">TPL_FIELD_DDS_WIDTH2</option>
+			</field>
+			<field name="xml_s5_drop_down_button_open_text" type="text" default="Open Panel" label="TPL_FIELD_DDS_BUTTOPEN" description="TPL_FIELD_DDS_BUTTOPEN_DESC" />
+			<field name="xml_s5_drop_down_button_close_text" type="text" default="Close Panel" label="TPL_FIELD_DDS_BUTTCLOSE" description="TPL_FIELD_DDS_BUTTCLOSE_DESC" />
+			<field name="xml_s5_drop_down_button_width" type="text" default="124" label="TPL_FIELD_DDS_BUTTWIDTH" description="TPL_FIELD_DDS_BUTTWIDTH_DESC" />
+			<field name="xml_s5_drop_down_button_height" type="text" default="26" label="TPL_FIELD_DDS_BUTTHEIGHT" description="TPL_FIELD_DDS_BUTTHEIGHT_DESC" />
+			<field name="xml_s5_drop_down_button_text_color" type="text:6:6" default="1E1E1E" size="6" label="TPL_FIELD_DDS_BUTTTXTCOLOR" description="TPL_FIELD_DDS_BUTTTXTCOLOR_DESC" />
+			<field name="xml_s5_drop_down_button_text_hover_color" type="text:6:6" default="666666" size="6" label="TPL_FIELD_DDS_BUTTHVRCOLOR" description="TPL_FIELD_DDS_BUTTHVRCOLOR_DESC" />
+			<field name="xml_s5_drop_down_button_text_size" type="text" default="9" label="TPL_FIELD_DDS_BUTTTXTSIZE" description="TPL_FIELD_DDS_BUTTTXTSIZE_DESC" />
+			<field name="xml_s5_drop_down_button_text_weight" type="select:list" default="bold" label="TPL_FIELD_DDS_BUTTTXTWGHT" description="TPL_FIELD_DDS_BUTTTXTWGHT_DESC">
+				<option value="bold">TPL_FIELD_DDS_BUTTTXTWGHTB</option>
+				<option value="normal">TPL_FIELD_DDS_BUTTTXTWGHTN</option>
+			</field>
+			<field name="xml_s5_drop_down_button_gradient_start" type="text:6:6" default="FFFFFF" size="6" label="TPL_FIELD_DDS_BUTTGRADST" description="TPL_FIELD_DDS_BUTTGRADST_DESC" />
+			<field name="xml_s5_drop_down_button_gradient_stop" type="text:6:6" default="E5E5E5" size="6" label="TPL_FIELD_DDS_BUTTGRADED" description="TPL_FIELD_DDS_BUTTGRADED_DESC" />
+			<field name="xml_s5_drop_down_button_border_size" type="text" default="1" label="TPL_FIELD_DDS_BUTTBORDERSZ" description="TPL_FIELD_DDS_BUTTBORDERSZ_DESC" />
+			<field name="xml_s5_drop_down_button_border_color" type="text:6:6" default="999999" size="6" label="TPL_FIELD_DDS_BUTTBORDERCOLOR" description="TPL_FIELD_DDS_BUTTBORDERCOLOR_DESC" />
+			<field name="xml_s5_drop_down_button_radius_size" type="text" default="16" label="TPL_FIELD_DDS_BUTTBORDERRR" description="TPL_FIELD_DDS_BUTTBORDERRR_DESC" />
+			<field name="xml_s5_drop_down_button_shadow" type="radio" vars="show:hide|Show:Hide" default="show" label="TPL_FIELD_DDS_BUTTSHADOW" description="TPL_FIELD_DDS_BUTTSHADOW_DESC" />
+			<field name="xml_s5_drop_down_button_shadow_size" type="text" default="2" label="TPL_FIELD_DDS_BUTTSHADOWSZE" description="TPL_FIELD_DDS_BUTTSHADOWSZE_DESC" />
+			<field name="xml_s5_drop_down_button_shadow_opacity" type="text" default="0.2" label="TPL_FIELD_DDS_BUTTSHADOWOPACITY" description="TPL_FIELD_DDS_BUTTSHADOWOPACITY_DESC" />
+			<field name="xml_s5_drop_down_button_position" type="select:list" default="center" label="TPL_FIELD_DDS_BUTTPOSITION" description="TPL_FIELD_DDS_BUTTPOSITION_DESC">
+				<option value="left">TPL_FIELD_DDS_BUTTPOSITIONL</option>
+				<option value="center">TPL_FIELD_DDS_BUTTPOSITIONC</option>
+				<option value="right">TPL_FIELD_DDS_BUTTPOSITIONR</option>
+			</field>	
+			
+			<field name="xml_s5_drop_down_background" type="text:6:6" default="FFFFFF" size="6" label="TPL_FIELD_DDS_BUTTDROPDOWNBC" description="TPL_FIELD_DDS_BUTTDROPDOWNBC_DESC" />
+			<field name="xml_s5_drop_down_background_opacity" type="text" default="0.95" label="TPL_FIELD_DDS_BUTTDROPDOWNOC" description="TPL_FIELD_DDS_BUTTDROPDOWNOC_DESC" />
+			<field name="xml_s5_drop_down_border_size" type="text" default="2" label="TPL_FIELD_DDS_BUTTDROPDOWNBS" description="TPL_FIELD_DDS_BUTTDROPDOWNBS_DESC" />
+			<field name="xml_s5_drop_down_border_color" type="text:6:6" default="999999" size="6" label="TPL_FIELD_DDS_BUTTDROPDOWNBORDC" description="TPL_FIELD_DDS_BUTTDROPDOWNBORDC_DESC" />
+			<field name="xml_s5_drop_down_shadow" type="radio" vars="show:hide|Show:Hide" default="show" label="TPL_FIELD_DDS_BUTTDROPDOWNBORDSHAD" description="TPL_FIELD_DDS_BUTTDROPDOWNBORDSHAD_DESC" />
+			<field name="xml_s5_drop_down_shadow_size" type="text" default="2" label="TPL_FIELD_DDS_BUTTDROPDOWNSSIZE" description="TPL_FIELD_DDS_BUTTDROPDOWNSSIZE_DESC" />
+			<field name="xml_s5_drop_down_shadow_opacity" type="text" default="0.2" label="TPL_FIELD_DDS_BUTTDROPDOWNOPACITY" description="TPL_FIELD_DDS_BUTTDROPDOWNOPACITY_DESC" />
+			</fieldset>
+    </admin>
+</vertex>

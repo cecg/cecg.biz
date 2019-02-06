@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<specific>
+	<version>2.2</version> 
+    <languages folder="xml/language">
+		<language tag="en-GB">en-GB/en-GB.tpl_cleanout.ini</language>
+	</languages>
+	<config>
+		<fields>
+            <fieldset name="s50" label="TPL_FIELD_TS_LABEL">
+                <field name="s51spacer_notice" label="&lt;span style=&quot;display:block;&quot;&gt;Make sure to hover your mouse over each title in this column for a full description of what each field does.&lt;/span&gt;" type="spacer" />
+                <field name="xml_s5_fonts_high" type="select:list" default="Open Sans Condensed" label="TPL_FIELD_SITEFONT_LABEL" description="TPL_FIELD_SITEFONT_DESC"></field>
+				<field name="xml_s5_facebook" type="text" default="" label="TPL_FACEBOOK_LABEL" description="TPL_FACEBOOK_DESC" />
+				<field name="xml_s5_linkedin" type="text" default="" label="TPL_LINKEDIN_LABEL" description="TPL_LINKEDIN_DESC" />
+				<field name="xml_s5_twitter" type="text" default="" label="TPL_TWITTER_LABEL" description="TPL_TWITTER_DESC" />
+				<field name="xml_s5_rss" type="text" default="" label="TPL_RSS_LABEL" description="TPL_RSS_DESC" />				
+				<field name="xml_s5_header" type="select:list" default="yes" label="TPL_HEADER_LABEL" description="TPL_HEADER_DESC">
+					<option value="yes">Fixed</option>
+					<option value="no">Normal</option>
+				</field>
+				<field name="xml_s5_highlight" type="text:6:6" default="002637" label="TPL_HIGHLIGHT_LABEL" description="TPL_HIGHLIGHT_DESC" />
+				
+            </fieldset>
+		</fields>
+	</config>	
+</specific>
