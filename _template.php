@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <!--<base href="https://cecg.biz<?php echo @$_SERVER['REQUEST_URI']; ?>"/>-->
+    <base href="https://cecg.biz<?php echo @$path; ?>"/>
     <title><?php echo @$title; ?> &#183; Crypto Economics Consulting Group</title>
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
     <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
